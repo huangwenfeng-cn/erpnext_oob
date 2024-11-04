@@ -42,7 +42,7 @@ frappe.ui.form.ControlTable = class ControlTable extends frappe.ui.form.ControlT
 			let row_idx = locals[doctype][row_docname].idx;
 			let data_length = data.length;
 
-			if (data.length <=50 || !table_field_event_handler){
+			if (data.length <=20 || !table_field_event_handler){
 				data.forEach((row, i) => {
 					setTimeout(() => {
 						let blank_row = !row.filter(Boolean).length;
