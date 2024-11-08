@@ -4,7 +4,7 @@ frappe.ui.form.ControlTable = class ControlTable extends frappe.ui.form.ControlT
 		this.$wrapper.off('paste', ':text');
 		this.$wrapper.on('paste', ':text', e => {
 			const table_field = this.df.fieldname;
-			const table_field_event_handler = this.frm.events[table_field];
+			const table_field_event_handler = this.frm.events[table_field+"_batch_copy"];
 			const grid = this.grid;
 			const grid_pagination = grid.grid_pagination;
 			const grid_rows = grid.grid_rows;
