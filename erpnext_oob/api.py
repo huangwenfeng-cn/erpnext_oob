@@ -26,3 +26,9 @@ def get_company_abbr(doc, month_key):
 @frappe.whitelist()
 def money_in_words(number, main_currency = None, fraction_currency=None):
     return money_in_words_zh(number = number, main_currency = main_currency, fraction_currency = fraction_currency)
+
+@frappe.whitelist()
+def money_in_words_english(number):    
+    from num2words import num2words
+
+    return num2words(number)
