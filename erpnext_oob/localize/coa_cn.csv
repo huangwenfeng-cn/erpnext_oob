@@ -29,6 +29,7 @@ account_name,parent_account,account_number,parent_account_number,is_group,accoun
 原材料,资产,1403,1000,,Stock,Asset,CNY
 材料成本差异,资产,1404,1000,,Stock Adjustment,Asset,CNY
 库存商品,资产,1405,1000,,Stock,Asset,CNY
+发出商品,资产,1406,1000,,Stock,Asset,CNY
 商品进销差价,资产,1407,1000,,Stock,Asset,CNY
 委托加工物资,资产,1408,1000,,Stock,Asset,CNY
 在产品,资产,1409,1000,,Stock,Asset,CNY

@@ -100,15 +100,18 @@ def change_field_property():
 	file_path = os.path.join(os.path.dirname(__file__), 'field_property.csv')
 	with open(file_path, 'r') as in_file:
 		data = list(csv.reader(in_file))
-	for (doctype, field_name, prop, value) in data:
-		frappe.get_doc({
-			'doctype': 'Property Setter',
-			'doctype_or_field': 'DocField',
-			'doc_type':doctype,
-			'field_name': field_name,
-			'property':prop,
-			'value':value
-		}).insert(ignore_permissions=1)
+	try:
+		for (doctype, field_name, prop, value) in data:
+			frappe.get_doc({
+				'doctype': 'Property Setter',
+				'doctype_or_field': 'DocField',
+				'doc_type': doctype,
+				'field_name': field_name,
+				'property': prop,
+				'value': value
+			}).insert(ignore_permissions=1)
+	except:
+		pass
 
 def setup_tax_template(company_name):
 	file_path = os.path.join(os.path.dirname(__file__), 'tax_template.json')
@@ -198,6 +201,4 @@ def set_item_group_account(company):
 				})
 				item_group_doc.save()
 	except:
-		pass
-
-		
+		pass	

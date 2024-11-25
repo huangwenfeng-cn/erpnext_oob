@@ -318,7 +318,7 @@
   "modified": "2022-01-22 19:42:47.535662",
   "name": "Quality Inspection-inspection_type",
   "property": "options",
-  "value": "\nIncoming;IQC\nOutgoing;OQC\nIn Process;IPQC"
+  "value": "\nIncoming\nOutgoing\nIn Process"
  },
  {
    "doc_type": "Asset Movement",
