@@ -310,26 +310,6 @@
   "property": "hidden",
   "value": "1"
  },
- {
-  "doc_type": "Quality Inspection",
-  "doctype": "Property Setter",
-  "doctype_or_field": "DocField",
-  "field_name": "inspection_type",
-  "modified": "2022-01-22 19:42:47.535662",
-  "name": "Quality Inspection-inspection_type",
-  "property": "options",
-  "value": "\nIncoming\nOutgoing\nIn Process"
- },
- {
-   "doc_type": "Asset Movement",
-   "doctype": "Property Setter",
-   "doctype_or_field": "DocField",
-   "field_name": "purpose",
-   "modified": "2022-01-22 19:42:47.535662",
-   "name": "Asset Movement-purpose_options",
-   "property": "options",
-   "value": "\nIssue;Asset Issue\nReceipt;Asset Receipt\nTransfer;Asset Transfer"
-  },
   {
    "doc_type": "Asset Movement",
    "doctype": "Property Setter",
