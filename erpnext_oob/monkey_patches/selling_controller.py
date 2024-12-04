@@ -28,5 +28,6 @@ def get_bypass_validate_selling_rate(company):
         val = frappe.cache().hget('bypass_validate_selling_rate', company)
 
     return val
-
-SellingController.validate_selling_price = custom_validate_selling_price
+apps =frappe.get_installed_apps()
+if 'erpnext_oob' in frappe.get_installed_apps():
+    SellingController.validate_selling_price = custom_validate_selling_price
