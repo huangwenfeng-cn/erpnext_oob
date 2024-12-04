@@ -19,4 +19,6 @@ def custom_get_defaults(user=None):
         ))
     return defaults
 
-defaults.get_defaults = custom_get_defaults
+apps =frappe.get_installed_apps()
+if 'erpnext_oob' in frappe.get_installed_apps():
+    defaults.get_defaults = custom_get_defaults
