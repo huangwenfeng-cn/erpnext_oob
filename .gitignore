@@ -4,3 +4,4 @@
 *.swp
 tags
 erpnext_oob/docs/current
+erpnext_oob/public/dist
