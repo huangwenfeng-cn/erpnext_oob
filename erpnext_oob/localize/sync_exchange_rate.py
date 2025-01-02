@@ -70,7 +70,7 @@ def sync_exchange_rate():
     active_currencies = frappe.get_all('Currency',filters={'enabled':1}, pluck='name')
     for row in exchange_rate_list[1:]:
         currency_name = row[0]
-        buying_rate = flt(row[1]) / 100         #公布的汇率是每100外币兑人民币
+        buying_rate = flt(row[5]) / 100         #公布的汇率是每100外币兑人民币，第五列中行折算价
         publish_date = row[-2][:10]             #日期数据带时分秒需截取
         currency_code = currency_map.get(currency_name)
         #更新需满足3个条件，货币已定义且已激活，有汇率数据
