@@ -8,7 +8,7 @@ ERPNext开箱即用，主要包括以下功能
 本项目解决标准控件翻译问题参考学习了破匣求禅/EBCLocal，源项目地址 https://gitee.com/petel_zhang/EBCLocal，
 在此特别感谢
 
-主要功能（本项目主要针对13版，理论上也适用于低版本)
+主要功能
 
 1. 界面深度汉化
 
@@ -33,6 +33,7 @@ ERPNext开箱即用，主要包括以下功能
  1.2.8 数据面板视图标题
 
  1.2.9 统计图表标题及日期过滤按钮与下拉选单
+
 
 2. 初始化（setup wizard）步骤简化
 
@@ -68,6 +69,13 @@ ERPNext开箱即用，主要包括以下功能
  3.1.4 表单表格控件
     3.1.4.1 因复制的内容最后一行是空行，进度条走不完
     3.1.4.2 文本编辑器字段内容中保留回车换行
+    3.1.4.3 增加公用js方法erpnext_oob.utils.switch_to_excel_download，支持将下载格式由默认的csv改为excel, 创建类似下面的客户端脚本启用该功能，items是子表字段名
+
+    frappe.ui.form.on('Sales Order', {
+        onload: function(frm) {
+            erpnext_oob.utils.switch_to_excel_download(frm, "items");
+        },
+    })
 
 3.1.5 列表界面底部显示数值类字段总计
 

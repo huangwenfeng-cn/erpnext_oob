@@ -1,4 +1,6 @@
 import frappe
+import json
+from frappe.utils.xlsxutils import build_xlsx_response
 from pypinyin import lazy_pinyin
 from erpnext_oob.monkey_patches.data import money_in_words_zh
 
@@ -32,3 +34,8 @@ def money_in_words_english(number):
     from num2words import num2words
 
     return num2words(number)
+
+@frappe.whitelist()
+def export_excel(data, filename):
+    data = json.loads(data)
+    build_xlsx_response(data, filename)

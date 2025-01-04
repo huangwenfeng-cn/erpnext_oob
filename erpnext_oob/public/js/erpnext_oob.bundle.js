@@ -1,4 +1,5 @@
 import './erpnext_oob.js';
+import './utils.js';
 import './widgets/onboarding_widget.js';
 import './widgets/number_card_widget.js';
 import './widgets/chart_widget.js';
