@@ -28,7 +28,7 @@ frappe.ui.form.ControlTable = class ControlTable extends frappe.ui.form.ControlT
 				data.shift();
 			} else {
 				// no column header, map to the existing visible columns
-				const visible_columns = grid_rows[0].get_visible_columns();
+				const visible_columns = grid.visible_columns;
 				let target_column_matched = false;
 				visible_columns.forEach(column => {
 					// consider all columns after the target column.
