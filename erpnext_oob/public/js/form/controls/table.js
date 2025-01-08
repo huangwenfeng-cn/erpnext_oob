@@ -40,6 +40,7 @@ frappe.ui.form.ControlTable = class ControlTable extends frappe.ui.form.ControlT
 			}
 
 			let row_idx = locals[doctype][row_docname].idx;
+			let start_row_idx = row_idx
 			let data_length = data.length;
 
 			if (data.length <=20 || !table_field_event_handler){
@@ -123,7 +124,7 @@ frappe.ui.form.ControlTable = class ControlTable extends frappe.ui.form.ControlT
 						row_idx++;
 					}					
 				});
-				table_field_event_handler(this.frm, child_rows, row_idx);
+				table_field_event_handler(this.frm, child_rows, start_row_idx);
 				return false; // Prevent the default handler from running.
 			}
 		});
