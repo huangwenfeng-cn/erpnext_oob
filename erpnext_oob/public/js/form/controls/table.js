@@ -32,8 +32,8 @@ frappe.ui.form.ControlTable = class ControlTable extends frappe.ui.form.ControlT
 				let target_column_matched = false;
 				visible_columns.forEach(column => {
 					// consider all columns after the target column.
-					if (target_column_matched || column.fieldname === $(e.target).data('fieldname')) {
-						fieldnames.push(column.fieldname);
+					if (target_column_matched || column[0].fieldname === $(e.target).data('fieldname')) {
+						fieldnames.push(column[0].fieldname);
 						target_column_matched = true;
 					}
 				});
