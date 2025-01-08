@@ -123,7 +123,7 @@ frappe.ui.form.ControlTable = class ControlTable extends frappe.ui.form.ControlT
 						row_idx++;
 					}					
 				});
-				table_field_event_handler(this.frm, child_rows);
+				table_field_event_handler(this.frm, child_rows, row_idx);
 				return false; // Prevent the default handler from running.
 			}
 		});
