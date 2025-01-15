@@ -7,6 +7,7 @@ import './ui/page.js';
 import './ui/search_utils.js';
 import './view/calendar.js';
 import './form/controls/link.js';
+import './form/controls/data.js';
 import './form/controls/select.js';
 import './form/controls/date_range.js';
 import './form/controls/dynamic_link.js';
