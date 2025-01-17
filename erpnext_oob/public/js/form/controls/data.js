@@ -2,8 +2,9 @@
 //直接在字段中显示翻译后的值影响面太广，不确定有哪些负面影响，所以注释掉了代码
 frappe.ui.form.ControlData = class ControlData extends frappe.ui.form.ControlData {
 	set_formatted_input(value) {		
-		if (value && this.df.translatable === 1){			
-			this.$input_wrapper.attr("title", __(value));
+		if (value && this.df.translatable === 1){
+			let translated_value = __(value);	
+			translated_value !== value && this.$input?.attr("title", translated_value);
 			// if (!this.title_value_map) {
 			// 	this.title_value_map = {};
 			// }
@@ -11,7 +12,6 @@ frappe.ui.form.ControlData = class ControlData extends frappe.ui.form.ControlDat
 			// this.title_value_map[translated_text] = value;
 			// value = translated_text;
 		}
-
 		super.set_formatted_input(value);		
 	}
 
