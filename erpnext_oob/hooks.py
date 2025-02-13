@@ -45,6 +45,14 @@ override_doctype_class = {
     "Data Import": "erpnext_oob.overrides.CustomDataImport"
 }
 
+permission_query_conditions = {
+	"Customer": "erpnext_oob.permission_query.get_permission_query_conditions_customer",
+    "Sales Order": "erpnext_oob.permission_query.get_permission_query_conditions_sales_order",
+    "Delivery Note": "erpnext_oob.permission_query.get_permission_query_conditions_delivery_note",
+    "Sales Invoice": "erpnext_oob.permission_query.get_permission_query_conditions_sales_invoice",
+    "Quotation": "erpnext_oob.permission_query.get_permission_query_conditions_quotation",
+    "Opportunity": "erpnext_oob.permission_query.get_permission_query_conditions_opportunity",
+}
 doc_events = {
  	"Customer": {
  		"validate": "erpnext_oob.doc_events.pinyin_name"

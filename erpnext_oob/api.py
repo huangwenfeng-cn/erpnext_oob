@@ -1,5 +1,6 @@
 import frappe
 import json
+from frappe.utils import cint
 from frappe.utils.xlsxutils import build_xlsx_response
 from pypinyin import lazy_pinyin
 from erpnext_oob.monkey_patches.data import money_in_words_zh
@@ -39,3 +40,9 @@ def money_in_words_english(number):
 def export_excel(data, filename):
     data = json.loads(data)
     build_xlsx_response(data, filename)
+
+def get_cached_value(key, settings='Out Of Box Settings'):
+    def get_value():
+        return cint(frappe.db.get_single_value(settings, key))
+
+    return frappe.cache().get_value(key, get_value)
