@@ -264,7 +264,7 @@ Department Wise Employee Count,员工部门分布
 Designation Wise Openings,职位空缺
 Department Wise Openings,部门职位空缺
 Attendance Count,出勤人数
-Job Card Analysis,加工单分析
+Job Card Analysis,工序卡分析
 Work Order Qty Analysis,工单数量分析
 Pending Work Order,待完成工单
 Last Month Downtime Analysis,上个月停机分析
@@ -273,7 +273,7 @@ Work Order Analysis,工单分析
 Completed Operation,完工工序
 Monthly Total Work Order,每月总工单
 Monthly Completed Work Order,每月完工工单
-Ongoing Job Card,未完成加工单
+Ongoing Job Card,未完成工序卡
 Monthly Quality Inspections,每月质量检验
 Produced Quantity,产出数量
 undefined,无数据

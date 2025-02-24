@@ -2,8 +2,8 @@ Bypass Validate Selling Rate,豁免采购价或成本价与销售价校验
 Asset Issue,发出
 Asset Receipt,收到
 Asset Transfer,转移
-"for equipment pool case, number of individual equipment","针对一组同类型设备创建一个工站的情况，这里指有多少台设备，用于控制可同时开工的加工单数量，例如产能(设备台数)为2，则同一天关联该工站的加工单最多不超过2张"
-"for same sequence ID operations, no preceeding operation to be finished validation check", 相同并行顺序号的后工序(工序序号)加工单可不必在前工序完成后才可开始(保存)
+"for equipment pool case, number of individual equipment","针对一组同类型设备创建一个工站的情况，这里指有多少台设备，用于控制可同时开工的工序卡数量，例如产能(设备台数)为2，则同一天关联该工站的工序卡最多不超过2张"
+"for same sequence ID operations, no preceeding operation to be finished validation check", 相同并行顺序号的后工序(工序序号)工序卡可不必在前工序完成后才可开始(保存)
 "for physical SFG to be  always produced in-house","针对当前物料是有物料清单的半成品场景，勾选表示生产本物料清单成品时，工单发这个半成品，半成品需另开工单生产入库，否则工单发半成品还是其下阶原材料取决于工单中是否勾选采用多级物料清单"
 "for subcontract case, ticked means this item excluded from the to-be sent to supplier raw material list",针对委外场景，勾选则委外发料(原材料)中不包括此物料
 "if not checked, it will be excluded from send to manufacture,manual transfer it to WIP warehouse without refer to work order instead",不勾选则工单发料时被剔除，需通过诸如物料移动-直接调拨发料至在制品仓以备入库扣帐

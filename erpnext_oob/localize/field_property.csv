@@ -5,14 +5,14 @@ Purchase Invoice,naming_series,options,PI-.YY.-
 Delivery Note,naming_series,options,DN-.YY.-
 Purchase Receipt,naming_series,options,PR-.YY.-
 Stock Entry,naming_series,options,SE-.YY.-
-Journal Entry,naming_series,options,JV-.YY.-
+Journal Entry,naming_series,options,JE-.YY.-
 Work Order,naming_series,options,WO-.YY.-
 Pick List,naming_series,options,PL-.YY.-
 Quality Inspection,naming_series,options,QI-.YY.-
 Production Plan,naming_series,options,PP-.YY.-
 Material Request,naming_series,options,MR-.YY.-
-Stock Reconciliation,naming_series,options,SRECO-.YY.-
-Payment Entry,naming_series,options,PAY-.YY.-
+Stock Reconciliation,naming_series,options,SRE-.YY.-
+Payment Entry,naming_series,options,PE-.YY.-
 Payment Request,naming_series,options,PYR-.YY.-
 Job Card,naming_series,options,JC-.YY.-
 GL Entry,naming_series,options,GLE-.YY.-
@@ -28,7 +28,7 @@ Asset Repair,naming_series,options,ASR-.YY.-
 Asset Movement,naming_series,options,ASM-.YY.-
 Subcontracting Order,naming_series,options,SCO-.YY.-
 Subcontracting Receipt,naming_series,options,SCR-.YY.-
-Packing Slip,naming_series,options,PAC-.YY.-
+Packing Slip,naming_series,options,PS-.YY.-
 Installation Note,naming_series,options,INS-.YY.-
 Delivery Trip,naming_series,options,DELT-.YY.-
 Request for Quotation,naming_series,options,RFQ-.YY.-
