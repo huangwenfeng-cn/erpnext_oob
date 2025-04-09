@@ -57,6 +57,9 @@ doc_events = {
  	"Customer": {
  		"validate": "erpnext_oob.doc_events.pinyin_name"
 	},
+    "Sales Person": {
+ 		"validate": "erpnext_oob.doc_events.sync_employee_user_permission"
+	},
     "Contact": {
  		"before_validate": "erpnext_oob.doc_events.contact_image_handling",
         "before_save": "erpnext_oob.doc_events.contact_image_handling"
