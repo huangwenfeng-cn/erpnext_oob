@@ -2,8 +2,12 @@ frappe.provide("erpnext_oob.utils")
 
 $.extend(erpnext_oob.utils, {
     switch_to_excel_download: function(frm, table_field){
-        let grid = frm.fields_dict[table_field].grid; 
-        let downloadButton = grid.wrapper.find(".grid-download");
+        let grid = frm.fields_dict[table_field].grid;
+        // 显示下载按钮
+        grid.wrapper.find(".grid-footer").toggle(true);
+        $(grid.wrapper).find(".grid-download").removeClass("hidden")
+        // 修改下载事件代码
+        let downloadButton = grid.wrapper.find(".grid-download");		
         if (downloadButton.length) { // Check if the button exists
             downloadButton.off('click').on("click", function(event) {
                 event.preventDefault(); // Prevent the default download
